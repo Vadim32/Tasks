@@ -1,6 +1,6 @@
 package demidov.hh.tasks.task2;
 
-public class Ford implements Car {
+public class Ford implements ICar {
 
 	
 	public int amortization() {
