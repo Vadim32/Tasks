@@ -4,14 +4,14 @@ import java.util.Random;
 
 public class Travel {
 
-	private Car car;
+	private ICar car;
 	 
     /*public Travel(Car car) {
     	this.car =car;
     }*/
  
 	
-	public void setCar(Car car)
+	public void setCar(ICar car)
 	{
 		this.car = car;
 	}
