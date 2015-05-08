@@ -1,6 +1,6 @@
 package demidov.hh.tasks.task2;
 
-public class Opel implements Car{
+public class Opel implements ICar{
 
 	public int amortization() {
 		// TODO Auto-generated method stub
