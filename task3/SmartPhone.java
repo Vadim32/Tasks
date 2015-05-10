@@ -5,9 +5,9 @@ import java.util.Random;
 
 class SmartPhone { 
 
-	/*private*/ String model; //Encapsulaton violation need use private 
-	/*private*/ Date date; //Encapsulaton violation need use private 
-	/*private*/ String revision; //Encapsulaton violation need use private 
+	private String model; //Encapsulaton violation need use private 
+	private Date date; //Encapsulaton violation need use private 
+	private String revision; //Encapsulaton violation need use private 
  
     
     /*A constructor is basically for this case of class def.
@@ -15,9 +15,9 @@ class SmartPhone {
     */
     public SmartPhone(String model, Date date, String revision) {
       //This preferred for more clear code
-      /*this.*/model = model; 
-      /*this.*/date = date;
-      /*this.*/revision = revision;
+      this.model = model; 
+      this.date = date;
+      this.revision = revision;
     }
  
     
