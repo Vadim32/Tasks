@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+	<hibernate-mapping>
+	
+		<class name="app1.domain.App1User" table="USER_INFO">
+		
+			<!-- Primary key ID will be generated depends on database configuration -->
+		 	<id name="userId" column="ID">
+		 		<generator class="native"></generator>
+		 	</id>
+		
+			<property name="firstName" column="FIRST_NAME" />
+			<property name="lastName" column="LAST_NAME" />
+			<property name="middleName" column="MIDDLE_NAME" />
+			<property name="username" column="USER_NAME" unique="true"/>
+			<property name="password" column="PASSWORD" />
+			<property name="userPosition" column="USER_POSITION" />
+			<!-- <property name="role" column="USER_ROLE" /> -->
+		
+		
+			<!-- User is owner of relationships, all changes on user will effect UserMessage entity -->	
+			<!-- 
+			<set name="userMessageList" inverse="true" lazy="false" fetch="select">
+				<key>
+					<column name="USER_ID" not-null="true"/>
+				</key>
+				<one-to-many class="demidov.pkg.domain.UserMessage" />
+			</set> -->
+		
+		</class>
+	
+	</hibernate-mapping>
